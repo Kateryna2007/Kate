@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Kate/static/css/main.d58cbbbf.css",
+    "main.js": "/Kate/static/js/main.1eeeccfd.js",
+    "index.html": "/Kate/index.html",
+    "main.d58cbbbf.css.map": "/Kate/static/css/main.d58cbbbf.css.map",
+    "main.1eeeccfd.js.map": "/Kate/static/js/main.1eeeccfd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d58cbbbf.css",
+    "static/js/main.1eeeccfd.js"
+  ]
+}
