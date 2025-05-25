@@ -1,0 +1,116 @@
+.aboutSection {
+  background: #f9f7f1; /* пастельний світло-бежевий */
+  padding: 80px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #4a4a4a;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 50px;
+}
+
+.textBlock {
+  flex: 1 1 450px;
+  line-height: 1.6;
+}
+
+.textBlock h2 {
+  font-size: 3rem;
+  margin-bottom: 25px;
+  color: #7f6a54; /* теплий коричневий */
+  font-weight: 700;
+  letter-spacing: 1.2px;
+}
+
+.textBlock p {
+  font-size: 1.2rem;
+  margin-bottom: 18px;
+  max-width: 600px;
+}
+
+.featuresList {
+  margin: 25px 0 35px 0;
+  padding-left: 20px;
+  list-style: none;
+  font-size: 1.15rem;
+  color: #9c8773;
+}
+
+.featuresList li {
+  margin-bottom: 12px;
+  position: relative;
+  padding-left: 28px;
+}
+
+.featuresList li::before {
+  content: '✔';
+  position: absolute;
+  left: 0;
+  color: #a67c52;
+  font-weight: bold;
+}
+
+.learnMoreBtn {
+  padding: 14px 36px;
+  background-color: #a67c52;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+  box-shadow: 0 6px 12px rgba(166, 124, 82, 0.4);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.learnMoreBtn:hover {
+  background-color: #6d4b27;
+  transform: scale(1.05);
+}
+
+.imageBlock {
+  flex: 1 1 450px;
+  display: flex;
+  justify-content: center;
+}
+
+.aboutImage {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 20px;
+  box-shadow: 0 12px 24px rgba(166, 124, 82, 0.3);
+  object-fit: cover;
+}
+
+/* Адаптивність */
+
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .textBlock, .imageBlock {
+    flex: 1 1 100%;
+  }
+
+  .textBlock h2 {
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .textBlock h2 {
+    font-size: 2rem;
+  }
+
+  .learnMoreBtn {
+    width: 100%;
+    padding: 16px;
+  }
+}

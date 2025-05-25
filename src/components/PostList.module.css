@@ -1,0 +1,31 @@
+.postListContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.postCard {
+  background-color: #fff0f5; /* пастельний рожевий */
+  border: 1px solid #e0d0dd;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.postCard:hover {
+  transform: translateY(-4px);
+}
+
+.postTitle {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #6b336e;
+  margin-bottom: 8px;
+}
+
+.postBody {
+  font-size: 1rem;
+  color: #444;
+}

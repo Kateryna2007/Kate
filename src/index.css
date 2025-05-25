@@ -1,0 +1,40 @@
+/* Повна ширина і висота для сторінки */
+html, body {
+  margin: 0;        /* прибираємо відступи */
+  padding: 0;       /* прибираємо відступи */
+  width: 100vw;     /* повна ширина вьюпорту */
+  height: 100vh;    /* повна висота вьюпорту */
+  overflow-x: hidden; /* запобігає горизонтальному скролу */
+  background-color: #f9f7f1; /* або будь-який потрібний фон */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Основний контейнер */
+#root, .app-container {
+  min-height: 100vh; /* мінімальна висота щоб зайняти весь екран */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Для адаптивної ширини контенту */
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto; /* центр по горизонталі */
+  padding: 0 20px; /* внутрішні відступи */
+  box-sizing: border-box;
+}
+
+/* Щоб елементи не виступали за межі */
+* {
+  box-sizing: border-box;
+}
+
+/* Додатково можна сховати скрол по горизонталі */
+body::-webkit-scrollbar {
+  height: 8px;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(0,0,0,0.2);
+  border-radius: 10px;
+}

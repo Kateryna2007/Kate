@@ -1,0 +1,55 @@
+.footer {
+  background-color: #f9f3f9;
+  padding: 40px 20px 20px;
+  color: #4b4453;
+  font-family: 'Segoe UI', sans-serif;
+  border-top: 1px solid #e2dbe8;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo h3 {
+  margin: 0;
+  font-size: 20px;
+  color: #b07bac;
+}
+
+.logo p {
+  margin: 5px 0 0;
+  font-size: 14px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.links a {
+  color: #4b4453;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.links a:hover {
+  color: #b07bac;
+}
+
+.contact p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.bottom {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 13px;
+  color: #999;
+}
